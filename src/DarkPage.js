@@ -1,33 +1,40 @@
-import React from "react";
+import React, { Component } from "react";
 import './index.css';
-// const[isChecked, setIsChecked]=useState(true); //changes when submit button is viewable
-    
-   
-const DarkPage = () => {
-  /*const handleCheck = () =>{
-    if(document.getElementById("terms").checked === true){
-      document.getElementById("submit").style.display = "block";
-    }
-    else {
-      document.getElementById("submit").style.display = "none";
-    }
-  } */
 
-  return (
-    <html>
-    <div className="darkpage">
-      <img  id = "banner" src = "cloudbanner.jpg" height="225px" width = "1000px"alt="clouds"></img>
-      <header className="App-header"></header>
-        <div class ="innerdiv">
-          <img class = "sidepic" src = "mensdress.jpg" alt="Men's dress shoes" height = "140px" width = "350px"></img>
-          <img class = "sidepic" src = "gymshoes.jpg" alt="Gym shoes"></img>
-          <img class = "sidepic" src = "sandals.jpg" alt="Sandals"></img>
-        </div>
-        <div class ="innerdiv"> 
-          <h1>Welcome to Cob's</h1>
-          <p>Please accept our terms and conditions:</p>
-          <div id = "scrolldivDark">
-            Text of Privacy Policy: <br/><br/>
+class DarkPage extends Component{
+
+    constructor(){ // this weird stuff is from Code Step by Step and makes the continue button appear/disappear
+        super()
+        this.state={
+            showMe:true
+        }
+        
+    }
+    operation()
+    {
+        this.setState({
+            showMe:!this.state.showMe
+        })
+    } 
+    
+    render() {
+        
+
+        return (
+          
+        <div className="lightpage">
+            <img  id = "banner" src = "/cloudbanner.jpg" height="225px" width = "1000px"alt="clouds"></img>
+            <header className="App-header"></header>
+            <div class ="innerdiv">
+                <img class = "sidepic" src = "/mensdress.jpg" alt="Men's dress shoes" height = "140px" width = "350px"></img>
+                <img class = "sidepic" src = "/gymshoes.jpg" alt="Gym shoes"></img>
+                <img class = "sidepic" src = "/sandals.jpg" alt="Sandals"></img>
+            </div>
+            <div class ="innerdiv"> 
+                <h1>Welcome to Cob's</h1>
+                <p>Please accept our terms and conditions:</p>
+                <div id = "scrolldivLight">
+                Text of Privacy Policy: <br/><br/>
             Privacy Policy for Cobs Cobblers<br/><br/>
             English<br/>
             Privacy Policy<br/>
@@ -302,25 +309,30 @@ const DarkPage = () => {
             Contact Us<br/>
             If you have any questions about this Privacy Policy, You can contact us: <br/><br/>
             By email: info@CobsCobblers.com
-          </div>
-
-          <form>
+            </div>
+                
             <br/> <br/> 
-            <input type="checkbox" id="terms" name="terms" value="terms" required checked></input>
+            <input type="checkbox" id="terms" name="terms" value="terms" checked onClick={()=>this.operation()}></input>
             <label for="terms">I accept the terms and conditions.</label>
             <br/> <br/> 
-            <button id = "submit">Continue</button>      
-        </form>
+            {
+                this.state.showMe?
+                <div>
+                    <button id = "submit">Continue</button>  
+                </div>
+                :null
+            }    
+                
+            </div>
+            <div class ="innerdiv">
+                <img class = "sidepic" src = "/docs.jpg" alt="Doc Martens" ></img>
+                <img class = "sidepic" src = "/converse.jpg" alt="Converse"></img>
+                <img class = "sidepic" src = "/heels.jpg" alt="Heels"></img>
+            </div>
         </div>
-        <div class ="innerdiv">
-          <img class = "sidepic" src = "docs.jpg" alt="Doc Martens" ></img>
-          <img class = "sidepic" src = "converse.jpg" alt="Converse"></img>
-          <img class = "sidepic" src = "heels.jpg" alt="Heels"></img>
-        </div>
-       
-    </div>
-    </html>
-  );
+    )    
 }
+}
+
 
 export default DarkPage;
