@@ -3,12 +3,12 @@ import './index.css';
 const LightPage = () => {
     return ( 
         <div className="lightpage">
-            <img  id = "banner" src = "images/cloudbanner.jpg" height="225px" width = "1000px"alt="clouds"></img>
+            <img  id = "banner" src = "cloudbanner.jpg" height="225px" width = "1000px"alt="clouds"></img>
             <header className="App-header"></header>
             <div class ="innerdiv">
-                <img class = "sidepic" src = "images/mensdress.jpg" alt="Men's dress shoes" height = "140px" width = "350px"></img>
-                <img class = "sidepic" src = "images/gymshoes.jpg" alt="Gym shoes"></img>
-                <img class = "sidepic" src = "images/sandals.jpg" alt="Sandals"></img>
+                <img class = "sidepic" src = "mensdress.jpg" alt="Men's dress shoes" height = "140px" width = "350px"></img>
+                <img class = "sidepic" src = "gymshoes.jpg" alt="Gym shoes"></img>
+                <img class = "sidepic" src = "sandals.jpg" alt="Sandals"></img>
             </div>
             <div class ="innerdiv"> 
                 <h1>Welcome to Cob's</h1>
@@ -236,9 +236,9 @@ const LightPage = () => {
                 </form>
             </div>
             <div class ="innerdiv">
-                <img class = "sidepic" src = "images/docs.jpg" alt="Doc Martens" ></img>
-                <img class = "sidepic" src = "images/converse.jpg" alt="Converse"></img>
-                <img class = "sidepic" src = "images/heels.jpg" alt="Heels"></img>
+                <img class = "sidepic" src = "docs.jpg" alt="Doc Martens" ></img>
+                <img class = "sidepic" src = "converse.jpg" alt="Converse"></img>
+                <img class = "sidepic" src = "heels.jpg" alt="Heels"></img>
             </div>
         </div>
      );
