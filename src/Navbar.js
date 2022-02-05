@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+//Also got this Navbar stuff from The Net Ninja
 const Navbar = () => {
     return ( 
         <nav className = "navbar"> 
