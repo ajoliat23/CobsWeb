@@ -1,20 +1,40 @@
-import React from "react";
+import React, { Component } from "react";
 import './index.css';
-const LightPage = () => {
-    return ( 
+
+class LightPage extends Component{
+
+    constructor(){ // this weird stuff is from Code Step by Step and makes the continue button appear/disappear
+        super()
+        this.state={
+            showMe:false
+        }
+        
+    }
+    operation()
+    {
+        this.setState({
+            showMe:!this.state.showMe
+        })
+    } 
+    
+    render() {
+        
+
+        return (
+          
         <div className="lightpage">
-            <img  id = "banner" src = "cloudbanner.jpg" height="225px" width = "1000px"alt="clouds"></img>
+            <img  id = "banner" src = "/cloudbanner.jpg" height="225px" width = "1000px"alt="clouds"></img>
             <header className="App-header"></header>
             <div class ="innerdiv">
-                <img class = "sidepic" src = "mensdress.jpg" alt="Men's dress shoes" height = "140px" width = "350px"></img>
-                <img class = "sidepic" src = "gymshoes.jpg" alt="Gym shoes"></img>
-                <img class = "sidepic" src = "sandals.jpg" alt="Sandals"></img>
+                <img class = "sidepic" src = "/mensdress.jpg" alt="Men's dress shoes" height = "140px" width = "350px"></img>
+                <img class = "sidepic" src = "/gymshoes.jpg" alt="Gym shoes"></img>
+                <img class = "sidepic" src = "/sandals.jpg" alt="Sandals"></img>
             </div>
             <div class ="innerdiv"> 
                 <h1>Welcome to Cob's</h1>
                 <p>Please accept our terms and conditions:</p>
                 <div id = "scrolldivLight">
-                    Text of Privacy Policy: <br/><br/>
+                Text of Privacy Policy: <br/><br/>
             Privacy Policy for Cobs Cobblers<br/><br/>
             English<br/>
             Privacy Policy<br/>
@@ -289,22 +309,30 @@ const LightPage = () => {
             Contact Us<br/>
             If you have any questions about this Privacy Policy, You can contact us: <br/><br/>
             By email: info@CobsCobblers.com
+            </div>
+                
+            <br/> <br/> 
+            <input type="checkbox" id="terms" name="terms" value="terms" onClick={()=>this.operation()}></input>
+            <label for="terms">I accept the terms and conditions.</label>
+            <br/> <br/> 
+            {
+                this.state.showMe?
+                <div>
+                    <button>Continue</button>  
                 </div>
-                <form>
-                    <br/> <br/> 
-                    <input type="checkbox" id="terms" name="terms" value="terms" required></input>
-                    <label for="terms">I accept the terms and conditions.</label>
-                    <br/> <br/> 
-                    <button type="submit">Continue</button>      
-                </form>
+                :null
+            }    
+                
             </div>
             <div class ="innerdiv">
-                <img class = "sidepic" src = "docs.jpg" alt="Doc Martens" ></img>
-                <img class = "sidepic" src = "converse.jpg" alt="Converse"></img>
-                <img class = "sidepic" src = "heels.jpg" alt="Heels"></img>
+                <img class = "sidepic" src = "/docs.jpg" alt="Doc Martens" ></img>
+                <img class = "sidepic" src = "/converse.jpg" alt="Converse"></img>
+                <img class = "sidepic" src = "/heels.jpg" alt="Heels"></img>
             </div>
         </div>
-     );
+    )    
 }
- 
+}
+
+
 export default LightPage;
