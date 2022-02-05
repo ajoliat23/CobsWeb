@@ -33,7 +33,7 @@ class DarkPage extends Component{
             <div class ="innerdiv"> 
                 <h1>Welcome to Cob's</h1>
                 <p>Please accept our terms and conditions:</p>
-                <div id = "scrolldivLight">
+                <div id = "scrolldivDark">
                 Text of Privacy Policy: <br/><br/>
             Privacy Policy for Cobs Cobblers<br/><br/>
             English<br/>
