@@ -10,14 +10,14 @@ const Home = () => {
                 <td> 
                     <center>
                         
-                       <img class="img2" src = "/sandSole.jpeg" alt="Dover Sole" ></img>
+                       <img class="img2" src = "/sandSole.jpeg" alt="Sand Sole" ></img>
                        
                     </center>
                     
                 </td>
                 <td> 
                     <center>
-                      <img class="img2" src = "/GreySole.jpg" alt="Dover Sole"></img>
+                      <img class="img2" src = "/GreySole.jpg" alt="Grey Sole"></img>
                      
                     </center>
                     
@@ -26,13 +26,13 @@ const Home = () => {
             <tr>  
                 <td> 
                     <center>
-                        <img class="img2" src = "/greenSole.jpeg" alt="Dover Sole" ></img>
+                        <img class="img2" src = "/greenSole.jpeg" alt="Green Sole" ></img>
                     </center>
                        
                 </td>
                 <td> 
                     <center>
-                       <img class="img2" src = "/southernSole.jpeg" alt="Dover Sole" ></img>
+                       <img class="img2" src = "/southernSole.jpeg" alt="Southern Sole" ></img>
                     </center>
                     
                 </td>
