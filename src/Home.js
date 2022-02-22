@@ -10,7 +10,7 @@ const Home = () => {
                 <td> 
                     <center>
                         
-                       <img class="img2" src = "/sandSole.jpeg" alt="Sand Sole" ></img>
+                       <img class="img2" src = "/public/sandSole.jpeg" alt="Sand Sole" ></img>
                        
                     </center>
                     
