@@ -1,7 +1,24 @@
-/*the .navbar css mostly came from The Net Ninja's youtube React tutorial*/
+/* .navbar css mostly comes from The Net Ninja (youtuber) with a few changes*/
+html{
+  background-color: rgb(8, 56, 88);
+}
+
+.dark{
+  background-color: rgb(5, 34, 54);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.light{
+  background-color: rgb(15, 95, 148);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
 .navbar{
   padding: 20px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
@@ -9,7 +26,8 @@
 }
 
 .navbar h1{
-  color: #000000;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar .links {
@@ -20,7 +38,9 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color:gray;
 }
+
 .App{
   margin: 1rem;
   padding: 2rem 2rem;
@@ -34,37 +54,18 @@
 
 }
 
-#scrolldivDark {
-  width:200px;
-  height:75px;
-  overflow:scroll;
-  padding:5px;
-  font-size:x-small;
-  display:inline-block;
-  text-align: left;
+h1, h2, h3{
+  font-size: 4em;
+  color:rgb(8, 56, 88);
 }
 
-#scrolldivLight {
-  width:350px;
-  height:300px;
-  overflow:scroll;
-  padding:5px;
-  font-size:small;
-  display:inline-block;
-  text-align: left;
-}
-
-h1{
-  font-family: 'Brush Script MT', cursive;
-  font-size: 5em;
+.h1{
+  color:rgb(8, 56, 88);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar:hover{
   color: #f1356d;
-}
-
-#banner{
-  opacity:.75;
 }
 
 .sidepic{
@@ -81,6 +82,210 @@ h1{
   text-shadow:none;
 }
 
+img{
+  
+  border-radius: 25px;
+  background-color: white;
+}
 
 
+table{
+  padding: 1em;
+}
 
+td{
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  align-items: center;
+  border-radius: 25px;
+}
+td:hover{
+  background-color:#c6f7f3;
+  
+}
+
+.img2{
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin-top: 10px;
+}
+
+button{
+  background-color: #37d184;
+  color: white;
+  height: 25px;
+  width: 100px;
+  border: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 1rem;
+}
+
+button:hover{
+  background-color: #1fb369;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1,h2,h3{
+  margin: .5rem 0;
+}
+h1{
+  font-size: 2rem;
+  color: black;
+}
+h2{
+  font-size: 1.2rem;
+}
+h3{
+  font-size: 1rem;
+}
+a{
+  text-decoration: none;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.col-1{
+  flex:1;
+}
+.col-2{
+  flex:2;
+  max-width: 80%;
+}
+.block{
+  background-color: white;
+  padding: 1rem;
+  margin:.5rem;
+  border-radius: .5rem;
+}
+.row.center{
+  align-items: center;
+}
+img.small{
+  max-width: 10rem;
+}
+button.add{
+  background-color: #40c0f0;
+  width: 1.5rem;
+  margin-top: 0px;
+}
+button.remove{
+  background-color: #f04040;
+  width: 1.5rem;
+  margin-top: 0px;
+}
+button.badge{
+  background-color: #f04040;
+  border: none;
+  color: white;
+  width: 1.5rem;
+  margin-top: 0px;
+  float:right;
+}
+.text-right{
+  text-align: right;
+  margin-right: 1rem;
+}
+button.chkout{
+  height: 3rem;
+  width: 10rem;
+  margin-top:1rem;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+#terms{
+  text-align: left;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+}
+/*---------------------------------------------------------------------*/
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+.check{
+  justify-content: center;
+}
+
+.termsL{
+  text-align: left;
+  padding: 10px;
+}
+.dec{
+  font-size: xx-small;
+}
+
+#fixMe{
+  margin: 0px;
+}
+.sale{
+  font-size: x-large;
+  color: red;
+}
+
+.old{
+  text-decoration: line-through;
+  color: red;
+}
+#fineprint{
+  font-size: small;
+}
+#larger{
+  font-size: x-large;
+}
+#xtFine{
+  font-size: 8px;
+  color: rgba(148, 148, 148, 0.486);
+  
+}
+#Fine{
+  color: rgba(148, 148, 148, 0.486);
+  font-size: 20px;
+}
