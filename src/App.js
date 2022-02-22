@@ -2,11 +2,13 @@ import Navbar from './Navbar';
 import Home from './Home';
 import DarkPage from './DarkPage';
 import LightPage from './LightPage';
-import React from 'react';
-
+import Terms from './Terms';
+import Checkout from './components/Checkout';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-//I learned all this routing stuff from The Net Ninja (he's a very helpful guy) This is how to build a multi page react app
-function App() {
+
+
+function App() { //all this routing stuff i learned from The Net Ninja
   return (
     <Router>
       <div className ="App">
@@ -21,6 +23,9 @@ function App() {
             </Route>
             <Route path = "/lightpage">
               <LightPage />
+            </Route>
+            <Route path = "/terms">
+              <Terms />
             </Route>
           </Switch>
         </div>
