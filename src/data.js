@@ -1,3 +1,5 @@
+//set this up with inspo from Basir although the Sole products are better themed than his examples were
+
 const data = {
     products:[
         {id: '1',
