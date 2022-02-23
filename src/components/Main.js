@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Product from './Product';
 import Checkout from './Checkout';
-
+//Coding with Basir except for the VisCk thing
 
 export default function MainL(props){
     const {products, onAdd} = props;
