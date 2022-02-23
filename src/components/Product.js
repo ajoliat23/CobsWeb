@@ -1,4 +1,5 @@
 import React from 'react'
+//You guessed it: Coding with Basir 'inspired' this--his tutorial was extremely helpful and only 45 minutes
 
 export default function Product(props){
     const {product, onAdd} = props;
