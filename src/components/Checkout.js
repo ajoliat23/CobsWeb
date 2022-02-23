@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Thanks from './Thanks';
-//import "./checkout.css";
+//W3Schools helped me with this form, not taking credit for that, however all that const stuff was me
+
 
 function Checkout() { 
   const[visCont, setVisCont] = useState(false);
