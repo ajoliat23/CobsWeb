@@ -2,6 +2,9 @@
 html{
   background-color: rgb(8, 56, 88);
 }
+.white{
+  color: white;
+}
 
 .dark{
   background-color: rgb(5, 34, 54);
@@ -99,10 +102,6 @@ td{
   background-color: white;
   align-items: center;
   border-radius: 25px;
-}
-td:hover{
-  background-color:#c6f7f3;
-  
 }
 
 .img2{
