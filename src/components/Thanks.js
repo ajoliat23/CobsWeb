@@ -1,16 +1,18 @@
 import React from 'react';
+import Nav2 from './Nav2'
 
 
-function Thanks() { 
+const Thanks = () => { 
     return (
-        <div>
-            <h1>Thank you for your purchase</h1>
-            <p>Enjoy your soul</p>
+        <html className = 'darkmode'>
+        <Nav2/>
+        <div className='darkMode'>
+            <h1 className='white'>Thank you for welcoming eternal darkness</h1>
+            <p>Enjoy your Cob Bucks</p>
 
         </div>
     
-        
+        </html>
     );
 }
-
 export default Thanks;
