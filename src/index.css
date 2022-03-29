@@ -1,10 +1,31 @@
 /* .navbar css mostly comes from The Net Ninja (youtuber) with a few changes*/
 html{
-  background-color: rgb(8, 56, 88);
+  background-color: #96F09E;
+  height: 100%;
+}
+.login{
+  height:100%;
+  display: inline-block;
+  align-items: center;
+  padding-right: 3em;
+  width: 13em;
+  padding-top: 1em;
+  margin-bottom: 6em;
 }
 .white{
   color: white;
+  padding-top: 1em;
 }
+
+.home {
+  background-image: url("cobsSouloBackground.png");
+  background-color: #96F09E;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+ }
+
+
 
 .dark{
   background-color: rgb(5, 34, 54);
@@ -13,17 +34,21 @@ html{
   border-radius: 20px;
 }
 
+#currency{
+  max-width: 4em;
+}
+
 .light{
-  background-color: rgb(15, 95, 148);
+  
   padding: 20px;
   margin-top: 20px;
   border-radius: 20px;
 }
 .navbar{
-  padding: 20px;
+  padding-bottom: 5px;
   display: inline-block;
   align-items: center;
-  max-width: 600px;
+  
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -35,6 +60,34 @@ html{
 
 .navbar .links {
   margin-left: auto;
+}
+
+.nav2{
+  padding: 20px;
+  display: inline-block;
+  align-items: center;
+ 
+  
+  
+}
+
+.space{
+  background: white;
+  border-radius: 15px;
+  
+}
+
+.nav2 a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 15px;
+  color:gray;
+  margin-right: 3em;
+  font-size:large;
+}
+
+.nav2 a:hover{
+  background:rgb(235, 234, 234);
 }
 
 .navbar a {
@@ -85,24 +138,12 @@ h1, h2, h3{
   text-shadow:none;
 }
 
-img{
-  
+img{ 
   border-radius: 25px;
   background-color: white;
+  padding: 10px;
 }
 
-
-table{
-  padding: 1em;
-}
-
-td{
-  height: 400px;
-  width: 400px;
-  background-color: white;
-  align-items: center;
-  border-radius: 25px;
-}
 
 .img2{
   padding-top: 5em;
@@ -127,6 +168,7 @@ button:hover{
 /*-------------------------------------------------------------------------------------------------------------*/
 body {
   font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
 }
 h1,h2,h3{
   margin: .5rem 0;
@@ -154,6 +196,7 @@ a{
 .col-2{
   flex:2;
   max-width: 80%;
+  
 }
 .block{
   background-color: white;
@@ -196,6 +239,16 @@ button.chkout{
   font-size: 1.5rem;
   justify-content: center;
 }
+
+button.chkout2{
+  height: 4rem;
+  width: 10rem;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
 #terms{
   text-align: left;
   background-color: white;
@@ -286,5 +339,61 @@ label {
 }
 #Fine{
   color: rgba(148, 148, 148, 0.486);
-  font-size: 20px;
+  font-size: 15px;
+}
+
+.incantation{
+  border: 3px solid black;
+  width: 60%;
+  padding: 10px;
+  text-align: left;
+}
+
+.loginContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.status{
+  background: white;
+  border-radius: 15px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: auto;
+}
+
+.darkMode{
+  background-color: black;
+  background: black;
+  color:white;
+  font-size: large;
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+}
+
+.bucks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.smlBtn{
+  height: 4em;
+  position: absolute;
+    top: 270px;
+    right: 120px;
+}
+
+.tiny{
+  height: 20px;
 }
