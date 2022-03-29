@@ -18,8 +18,7 @@ export default function MainL(props){
             
             : 
                 <div>
-                    <h2 id = 'larger'>High Quality Fresh<em id="Fine">*</em> Sole</h2>
-                    <p id='xtFine'>*freshly frozen</p>
+                    <h2 id = 'larger'>Cob Bucks</h2>
                     <div className='row'>
                         {products.map((product) => (
                             <Product key={product.id} product={product} onAdd={onAdd}></Product>
