@@ -1,28 +1,21 @@
 //set this up with inspo from Basir although the Sole products are better themed than his examples were
-
 const data = {
     products:[
         {id: '1',
-        name:'Grey Sole',
-        price: 14,
-        image:'/GreySole.jpg'
+        name:'bronze',
+        price: 2,
+        image:'/bronze.png'
         },
-        
         {id: '2',
-        name:'Green Sole',
-        price: 16,
-        image:'/greenSole.jpeg'
+        name:'silver',
+        price: 3,
+        image:'/silver.png'
         },
-        {id: '4',
-        name:'Sand Sole',
-        price: 18,
-        image:'/sandSole.jpeg'
-        },
-        {id: '5',
-        name:'Southern Sole',
-        price: 20,
-        image:'/southernSole.jpeg'
-        },
+        {id: '3',
+        name:'gold',
+        price: 5,
+        image:'/gold.png'
+        }
     ],
 };
 export default data;
