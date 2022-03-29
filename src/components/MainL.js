@@ -18,14 +18,13 @@ export default function MainL(props){
             
             : 
                 <div>
-                    <h2 id ='larger'>High Quality Sole</h2>
+                    <h2 id ='larger'>Cob Bucks Store</h2>
                     
                     <div className='row'>
                         {products.map((product) => (
                             <ProductL key={product.id} product={product} onAdd={onAdd}></ProductL>
                         ))} 
                     </div>
-                    <p id = "fineprint">*Does not include the one time flat rate shipping fee of $25 to account for keeping the Sole frozen + tax</p>
                     <button className='chkout' onClick={()=>setVisCk(!visCk)}>Checkout</button>
                 </div>
             }
