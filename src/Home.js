@@ -1,45 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Login from './components/Login.js';
 
 const Home = () => {
+
+    const[visCont, setVisCont] = useState(false);
+
     return ( 
-        <div className="home">
-            <h2 className='white'>We have all your Sole needs!</h2>
-            <p className='white'>Continue to either the Dark Page or Light Page to see our selection!</p>
-        <center>
-        <table>
-            <tr>  
-                <td> 
-                    <center>
-                       <img class="img2" src = "/sandSole.jpeg" alt="Sand Sole" ></img>
-                    </center>
-                    
-                </td>
-                <td> 
-                    <center>
-                      <img class="img2" src = "/GreySole.jpg" alt="Gray Sole"></img>
-                     
-                    </center>
-                    
-                </td>  
-                <td> 
-                    <center>
-                        <img class="img2" src = "/greenSole.jpeg" alt="Green Sole" ></img>
-                    </center>
-                       
-                </td>
-                <td> 
-                    <center>
-                       <img class="img2" src = "/southernSole.jpeg" alt="Southern Sole" ></img>
-                    </center>
-                    
-                </td>
-            </tr>
+       <html>
+
+        {visCont===false ? 
+        <body className = "home">
+            <div >
+                
+                <main >
+                    <br/>
+                    <br/>
+                    <h1 className = "white">Welcome to Cob's Soulo Game</h1>
+                    <br/> 
+                    <br/>
+                    <form className = "login">
+                        <label for="accName">Username</label>
+                        <input type="text" id="cname" name="cardname" placeholder="John More Doe"></input>
+                        <label for="accPass">Password</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"></input>
+                        <br/>
+                        <br/>
+                        <button className = 'chkout' onClick={()=>setVisCont(!visCont)}>Log in</button>
+                    </form>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p id = "xtFine">By signing into my account I accept the terms and conditions</p>
+                </main>
+            
         
-        </table>
-    </center>
             
 
-        </div>
+            </div>
+        </body>
+        : <Login/>
+    }  
+        </html>
      );
 }
  
