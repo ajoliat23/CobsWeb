@@ -1,8 +1,8 @@
 import Navbar from './Navbar';
 import Home from './Home';
-import DarkPage from './DarkPage';
-import LightPage from './LightPage';
+import TemplateL from './TemplateL';
 import Terms from './Terms';
+import Template from './Template'
 import Checkout from './components/Checkout';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -18,11 +18,11 @@ function App() { //all this routing stuff i learned from The Net Ninja
             <Route exact path = "/">
               <Home />
             </Route>
-            <Route path = "/darkpage">
-              <DarkPage />
+            <Route path = "/template">
+              <Template />
             </Route>
-            <Route path = "/lightpage">
-              <LightPage />
+            <Route path = "/templateL">
+              <TemplateL />
             </Route>
             <Route path = "/terms">
               <Terms />
