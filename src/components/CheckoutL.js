@@ -6,7 +6,7 @@ function CheckoutL() {
   const[visCont, setVisCont] = useState(0);
     return (
        <div>
-        {visCont !== 5 ?      
+        {visCont !== 4 ?      
         <div>     
         <div class="row">
         <div class="col-75">
@@ -70,10 +70,6 @@ function CheckoutL() {
               <div className='row check'>
                 <input type="checkbox" id="termsL" name="termsL" value="termsL" required onClick={()=>setVisCont(visCont+1)}></input> 
                 <label for="termsL">I accept the <a href = "/terms">terms and conditions</a></label>
-              </div>
-              <div className='row check'>
-                <input type="checkbox" id="terms" name="terms" value="terms" required onClick={()=>setVisCont(visCont+1)}></input> 
-                <label for="terms">I acknowledge that I am forfeiting my soul by eating the fish</label>
               </div>
               
               <button type = "submit" className='chkout' onClick={()=>setVisCont(visCont+2)}>Place order</button>
