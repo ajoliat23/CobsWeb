@@ -6,8 +6,7 @@ export default function Basket(props){
     const itemsPrice = cartItems.reduce((a,c)=> a+c.price * c.qty, 0);
     const taxPrice = itemsPrice * 0.14;
     const shippingPrice = itemsPrice > 2000 ? 0 : 25;
-    const freezingFee = 25;
-    const totalPrice = itemsPrice + taxPrice + shippingPrice + freezingFee;
+    const totalPrice = itemsPrice + taxPrice + shippingPrice;
     return (
     
     <aside className='block col-1'>
@@ -38,10 +37,7 @@ export default function Basket(props){
               <div className='col-2'>Tax Price</div>
               <div className='col-1 text-right'>${taxPrice.toFixed(2)}</div>
           </div>
-          <div className='row dec'>
-              <div className='col-2'>Freezing Fee</div>
-              <div className='col-1 text-right'>${freezingFee.toFixed(2)}</div>
-          </div>
+
          
           <div className='row dec'>
               <div className='col-2 dec'>Shipping Price</div>
