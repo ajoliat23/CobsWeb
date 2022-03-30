@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './index.css';
 import Game from './components/GameL';
 import Nav2 from './components/Nav2';
-import StatusBar from './components/StatusBar';
+import Recharge from './RechargeL';
 import Store from './StoreL';
 import LoginL from './components/LoginL';
 import Thanks from './components/Thanks';
@@ -27,6 +27,9 @@ function templateL() { //all this routing stuff i learned from The Net Ninja
             </Route>
             <Route path = "/store">
               <Store />
+            </Route>
+            <Route path = "/recharge">
+              <Recharge />
             </Route>
             <Route path = "/loginL">
               <LoginL />
