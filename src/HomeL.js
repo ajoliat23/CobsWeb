@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LoginL from './components/LoginL.js';
-import Nav2 from './components/Nav2.js'
+import GameGuest from './components/GameGuest.js';
+import StatusBarGuest from './components/StatusBarGuest.js';
 
 const HomeL = () => {
 
@@ -44,7 +45,12 @@ const HomeL = () => {
                         
                     </form>
                     </div>
-                    : <Nav2/>}
+                    : <div>
+                        <GameGuest/>
+                    </div>
+                    
+                    
+                    }
                 </main>
             
             </div>
