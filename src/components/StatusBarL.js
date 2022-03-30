@@ -9,7 +9,7 @@ const StatusBar = () => {
                 <h1>Login Bonus</h1>
                 <p>Every Log in = 1 bronze Cob Buck!</p>
                 
-                <img src = 'DoneL.png' height='100px'></img>
+                <img src = 'Done.png' height='100px'></img>
                 
             </div>
         </html>
