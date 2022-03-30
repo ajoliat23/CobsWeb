@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TicTacToe from './TicTacToe/TicTacToe.js'
 import Nav2 from './Nav2';
 import Checkout from './Checkout';
-import StatusBar from './StatusBar';
+import StatusBar from './StatusBarL';
 //Coding with Basir except for the VisCk thing
 
 export default function Game(){
