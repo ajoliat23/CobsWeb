@@ -40,7 +40,7 @@ export default function Basket(props){
 
          
           <div className='row dec'>
-              <div className='col-2 dec'>Shipping Price</div>
+              <div className='col-2 dec'>Buck Fee</div>
               <div className='col-1 text-right'>${shippingPrice.toFixed(2)}</div>
           </div>
 
