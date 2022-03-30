@@ -35,10 +35,39 @@ export default function Game(){
             
         </main>
 
+        <aside className = 'block col-1 bucks'>
+            <h2>Leader Board</h2>
+            <h3>Your rank: 14203</h3>
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>User</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>greenfox23</td>
+                    <td>78832</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>__madhalo__</td>
+                    <td>78561</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>noodlesss</td>
+                    <td>69342</td>
+                </tr>
+
+            </table>
+            
+        </aside>
+
         {badge===true ? 
 
         <aside className = 'block col-1 bucks'>
-            <button className= 'smlBtn' onClick={()=>setBadge(!badge)}>Show Achievements</button>
+            
             <h2>Your Badges</h2>
             <div className='row'>
                 <img src = 'black.png' width ='35px'></img>
@@ -78,11 +107,11 @@ export default function Game(){
             
             
             
-           
+            <button className= 'smlBtn' onClick={()=>setBadge(!badge)}>Show Achievements</button>
         </aside>
          :
         <aside className = 'block col-1 bucks'>
-            <button className= 'smlBtn' onClick={()=>setBadge(!badge)}>Show Badges</button>
+            
             <h2>Your Achievements</h2>
             <div className='row'>
                 <img src = 'black.png' width ='35px'></img>
@@ -93,7 +122,7 @@ export default function Game(){
                 <img src = 'bronze.png' width ='35px'></img>
                 <p>Obtain Bronze Cobs Bucks</p>
             </div>
-            
+            <button className= 'smlBtn' onClick={()=>setBadge(!badge)}>Show Badges</button>
         </aside>
     }
         </div>
