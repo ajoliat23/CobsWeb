@@ -389,11 +389,16 @@ label {
 
 .smlBtn{
   height: 4em;
-  position: absolute;
-    top: 270px;
-    right: 120px;
+  margin-top: 20px
 }
 
 .tiny{
   height: 20px;
+}
+
+.guest{
+  color: black;
+  background-color: white;
+  margin-left: 20px;
+  height: 35px;
 }
