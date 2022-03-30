@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react' /*watched a video to do this tic tac toe stuff*/
 import './TicTacToe.css'
 
 const TicTacToe = () => {
