@@ -23,6 +23,16 @@ const Login = () => {
             Gratias tibi valde
 
             </p>
+            <h2> Translation</h2>
+            <p className='incantation'>
+            I want to see eternal darkness <br/><br/>
+            I certainly love darkness<br/><br/>
+            Truly a fan of darkness<br/><br/>
+            Me and the darkness are like best friends<br/><br/>
+            So I would be truly grateful if I could have endless darkness<br/><br/>
+            This really is a lot<br/><br/>
+            Thank you very much
+            </p>
 
             <form>
             <div className='row check'>
