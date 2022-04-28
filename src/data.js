@@ -1,20 +1,27 @@
 //set this up with inspo from Basir although the Sole products are better themed than his examples were
 const data = {
     products:[
-        {id: '1',
-        name:'bronze',
-        price: 2,
-        image:'/bronze.png'
-        },
+        
         {id: '2',
-        name:'silver',
-        price: 3,
-        image:'/silver.png'
+        name:'Purple Haze',
+        artist: 'Jimmy Hendrix',
+        image:'/jhendrix.jpg'
         },
         {id: '3',
-        name:'gold',
-        price: 5,
-        image:'/gold.png'
+        name:'Conversations',
+        artist: 'Juice WRLD',
+        image:'/juicewrld.jpg'
+        },
+        {id: '6',
+        name:'Comfortably Numb',
+        artist: 'Pink Floyd',
+        image:'/pfloyd.png'
+        },
+       
+        {id: '9',
+        name:'Flower Boy',
+        artist: 'Tyler The Creator',
+        image:'/TylerCreator.jpg'
         }
     ],
 };
