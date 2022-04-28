@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Login from './components/Login.js';
+import DarkPage from './DarkPage';
 
 const Home = () => {
 
@@ -15,24 +15,24 @@ const Home = () => {
                 <main >
                     <br/>
                     <br/>
-                    <h1 className = "white">Welcome to Cob's Soulo Game</h1>
+                    <h1 className = "white">Welcome to Cob's Soul Music</h1>
                     <br/> 
                     <br/>
                     <form className = "login">
                         <label for="accName">Username</label>
-                        <input type="text" id="cname" name="cardname" placeholder="John More Doe"></input>
+                        <input type="text" id="cname" name="cardname" placeholder="James Henry"></input>
                         <label for="accPass">Password</label>
-                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"></input>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="123456"></input>
                         <br/>
                         <br/>
                         <button className = 'chkout' onClick={()=>setVisCont(!visCont)}>Log in</button>
+                        <br/>
+                        <br/>
+                        <div className='row check'>
+                                <input type="checkbox" id="termsL"  required checked></input> 
+                        <label for="termsL" required id='xtFine'>By signing into my account I accept the <a href = './terms'>terms and conditions</a></label>
+                        </div>
                     </form>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <p id = "xtFine">By signing into my account I accept the terms and conditions</p>
                 </main>
             
         
@@ -40,7 +40,7 @@ const Home = () => {
 
             </div>
         </body>
-        : <Login/>
+        : <DarkPage/>
     }  
         </html>
      );
