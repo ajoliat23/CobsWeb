@@ -1,6 +1,6 @@
 /* .navbar css mostly comes from The Net Ninja (youtuber) with a few changes*/
 html{
-  background-color: #96F09E;
+  background-color: #4341b8;
   height: 100%;
 }
 .login{
@@ -18,8 +18,8 @@ html{
 }
 
 .home {
-  background-image: url("cobsSouloBackground.png");
-  background-color: #96F09E;
+
+  background-color: #4341b8;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -28,7 +28,7 @@ html{
 
 
 .dark{
-  background-color: rgb(5, 34, 54);
+  background-color: #232279;
   padding: 20px;
   margin-top: 20px;
   border-radius: 20px;
@@ -39,7 +39,7 @@ html{
 }
 
 .light{
-  
+  background-color: #7675ce;
   padding: 20px;
   margin-top: 20px;
   border-radius: 20px;
@@ -189,6 +189,7 @@ a{
 .row{
   display: flex;
   justify-content: space-between;
+  
 }
 .col-1{
   flex:1;
@@ -196,7 +197,8 @@ a{
 .col-2{
   flex:2;
   max-width: 80%;
-  
+  background-color: white;
+  border-radius: 10px;
 }
 .block{
   background-color: white;
@@ -401,4 +403,36 @@ label {
   background-color: white;
   margin-left: 20px;
   height: 35px;
+}
+
+#imgLeft{
+  float:left;
+}
+
+.fakeBtn{
+  background-color: #37d184;
+  padding: 5px;
+  color: white;
+  height: 25px;
+  width: 100px;
+  border: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.adBtn{
+  background-color: #551a64;
+  padding: 10px;
+  color: white;
+  height: 25px;
+  width: 100px;
+  border: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.store{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
