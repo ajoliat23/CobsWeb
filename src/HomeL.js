@@ -1,34 +1,24 @@
 import React, { useState } from 'react';
-import LoginL from './components/LoginL.js';
-import GameGuest from './components/GameGuest.js';
-import StatusBarGuest from './components/StatusBarGuest.js';
+import LightPage from './LightPage';
 
-const HomeL = () => {
+const Home = () => {
 
     const[visCont, setVisCont] = useState(false);
     const[chk, setChk] = useState(false);
     const[guest,setGuest] = useState(false);
-    
-    const handleClick = () => {
-        alert('Will continue as a guest, the status bar will not accurately reflect your Status.');
-    };
 
     return ( 
        <html>
 
         {visCont===false ? 
         <body className = "home">
-            <div >
-                
-                <main >
-                    
-                    <div></div>
-                    {guest===false ?
-                    <div>
-                    <h1 className = "white">Welcome to Cob's Soulo Game</h1>
+                <div>
+                    <h1 className = "white">Welcome to Cob's Soul Music</h1>
                     <form className = "login">
-
-                        <button className = 'chkout2' onClick={()=>setGuest(true)}>Continue as Guest</button> 
+                        
+                        
+                        <button className = 'chkout2' onClick={()=>setVisCont(true)}>Continue as Guest</button>
+                        
                         <p>OR</p>
                         <label for="accName">Username</label>
                         <input type="text" id="cname" name="cardname" placeholder="John More Doe"></input>
@@ -44,24 +34,12 @@ const HomeL = () => {
                         {chk===true ? <button className = 'chkout' onClick={()=>setVisCont(!visCont)}>Log in</button>: <></>}
                         
                     </form>
-                    </div>
-                    : <div>
-                        <GameGuest/>
-                    </div>
-                    
-                    
-                    }
-                </main>
-            
-            </div>
+                </div>
         </body>
-        :
-        
-        <LoginL/>
+        : <LightPage/>
     }  
-
         </html>
      );
 }
  
-export default HomeL;
+export default Home;
